@@ -1,6 +1,6 @@
-#include "iolib_is_channel.h"
-#include "utils.h"
-#include "PLL.c"
+#include "lib/iolib_is_channel.h"
+#include "lib/utils.h"
+#include "lib/PLL.h"
 
 // 2. Declarations Section
 //   Global Variables
@@ -12,7 +12,7 @@
     CH(Blue, 2, Out, Dig, NA, Off) \
 	CH(Green, 3, Out, Dig, NA, Off) \
     CH(SW1, 4, In, Dig, NA, On)
-#include "init_is.h"
+#include "lib/init_is.h"
 
 #define PORT_NAME D
 #define CHANNELS \
@@ -20,7 +20,7 @@
 	CH(PB02, 1, In, Dig, NA, Off) \
     CH(PB03, 2, In, Dig, NA, Off) \
 	CH(PB04, 3, In, Dig, NA, Off)
-#include "init_is.h"
+#include "lib/init_is.h"
 
 #define PORT_NAME A
 #define CHANNELS \
@@ -28,7 +28,7 @@ CH(UVLamp01, 2, Out, Dig, NA, Off)\
 CH(LightLamp01, 4, Out, Dig, NA, Off)\
 CH(Pump02, 5, Out, Dig, NA, Off)\
 CH(Pump01, 6, Out, Dig, NA, Off)
-#include "init_is.h"
+#include "lib/init_is.h"
 
 //CH(Light01, 0, In, Anl, NA, Off)\
 
@@ -37,7 +37,7 @@ CH(Pump01, 6, Out, Dig, NA, Off)
 CH(Temp01, 1, In, Anl, NA, Off)\
 CH(Valve01, 2, Out, Dig, NA, Off)\
 CH(Valve02, 3, Out, Dig, NA, Off)
-#include "init_is.h"
+#include "lib/init_is.h"
 /* NOKIA 5110 DISPLAY UTILS */
 void N5110_Init();
 
@@ -49,13 +49,13 @@ void N5110_Init();
 //CH(CE, 5, Out, Dig, SSI, Off)\
 //CH(DC, 6, Out, Dig, SSI, Off)\
 //CH(DIN, 7, Out, Dig, SSI, Off)
-//#include "init_is.h"
+//#include "lib/init_is.h"
 
 // Nokia 5110 screen pins port D
 //#define PORT_NAME D
 //#define CHANNELS \
 //CH(CLK, 6, Out, Dig, SSI, Off)\
-//#include "init_is.h"
+//#include "lib/init_is.h"
 /***=======NOKIA 5110 DISPLAY=======***/
 
 
@@ -65,7 +65,7 @@ void N5110_Init();
  TM(0, 10)\
  TM(1, 20)\
  TM(2, 5)
-#include "timer_init.h"
+#include "lib/timer_init.h"
 
 // make a schedule for devices
 // every line has starting time and running time

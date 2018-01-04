@@ -1,7 +1,7 @@
 // PLL.c
 // Runs on LM4F120/TM4C123
  
-#include "PLL.h"
+#include "lib/PLL.h"
 
 // The #define statement SYSDIV2 in PLL.h
 // initializes the PLL to the desired frequency.
